@@ -3,7 +3,7 @@
 :root {
   --dark-mode-bg-primary: #151C26;
   --dark-mode-bg-secondary: #1B2936;
-  --dark-mode-txt: #ddd;
+  --dark-mode-txt: #fff;
   --dark-mode-border: rgba(255,255,255,.5);
 }
 
@@ -95,7 +95,7 @@ li.nav-item:after {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   padding-top: 10px;
   transition: all .5s ease;
   border-bottom: 4px solid rgba(255,255,255,0) !important;
@@ -182,7 +182,7 @@ section.home-portifolio-container {
 /* item conteudo */
 
 .item-page {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   text-align: left;
 }
@@ -271,9 +271,236 @@ footer {
 
 .icon {
   background-color: rgba(255,255,255,.1) !important;
-  padding: 4px;
+  padding: 4px !important;
 }
 
 .diploma-icon {
   width: 20px !important;
+}
+
+/*contattos */
+
+.contacts-container {
+  overflow: hidden;
+  height: 100%;
+}
+
+.contact-form-title {
+  margin: 0 0 50px;
+}
+
+.container-contact {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.wrap-contact {
+  text-align: left;
+  color: #fff;
+}
+
+.wrap-contact .input {
+  width: 100%;
+  border-radius: 0;
+  background-color: rgba(255,255,255,.05);
+  border: none;
+  padding: 5px;
+  height: 35px;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+.wrap-contact .input:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.message {
+  height: 120px !important;
+}
+
+.contact-form {
+  width: 80%;
+  height: 100%;
+  padding: 0;
+}
+
+.input-title {
+  text-align: left;
+}
+
+.submit-btn {
+  padding: 5px 7px 5px 5px;
+  background-color: rgba(255,255,255,.05);
+  color: #fff;
+  border: none;
+  border-left: 3px solid rgba(255,255,255,0);
+  transition: all .2s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgba(34,90,148, 0.3);
+  color: #fff;
+  border-left: 3px solid rgba(60,96,190, 1);
+}
+
+.mapboxgl-map {
+  width: 100% !important;
+  height: 33vh !important;
+  margin: 0 0 5px 0;
+}
+
+.address-and-contacts {
+  display: block;
+  float: right;
+  text-align: right;
+  width: 50%;
+  display: inline-block;
+}
+
+.contacts {
+  height: 100%;
+}
+
+.address-and-contacts span {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+}
+
+.contact-content {
+  display: inline-block;
+  margin: 0;
+}
+
+.contacts-extra {
+  margin: 30px 0 0;
+}
+
+.link {
+  color: #3D7AD5 !important;
+  transition: all .5s ease;
+  margin: 0;
+}
+
+.link:hover {
+  color: #548CE8 !important;;
+  transition: all .5s ease;
+}
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0px;
+  pointer-events: none;
+
+  font-family: Poppins-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container-contact {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .address-and-contacts {
+    display: block;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .wrap-contact .input {
+    width: 100%;
+    border-radius: 0;
+    background-color: rgba(255,255,255,.05);
+    border: none;
+    padding: 5px;
+    height: 30px;
+    color: #fff;
+    margin: 0 0 5px;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .mapboxgl-map {
+    width: 100% !important;
+    height: 20vh !important;
+    margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  
 }

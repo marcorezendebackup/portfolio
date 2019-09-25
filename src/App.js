@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import portfolioData from './data.json'
 import Item from './components/portfolio/Item.js'
+import Contacts from './components/Contacts.js'
 import { Redirect } from 'react-router-dom'
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
             <nav>
               <ul className="nav">
                 <li className="nav-item"><Link to="/sobre-mim"><i className="fas fa-address-card"></i>sobre mim</Link></li>
-                <li className="nav-item"><Link to="/"><i className="fas fa-sticky-note"></i>portfólio</Link></li>
+                <li className="nav-item"><Link to="/"><i class="fas fa-book"></i>portfólio</Link></li>
                 <li className="nav-item"><Link to="/contatos"><i className="fas fa-mail-bulk"></i>contatos</Link></li>
               </ul>
             </nav>
@@ -42,6 +43,9 @@ class App extends Component {
           )}/>
           <Route path={[paths]} exact render={() => (
               <Item/>
+          )}/>
+          <Route path="/contatos" exact render={() => (
+              <Contacts/>
           )}/>
           </main>
 
