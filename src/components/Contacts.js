@@ -4,7 +4,7 @@ import marker from '../marker.png';
 import $ from 'jquery'; 
 import axios from 'axios';
 
-const API_PATH = 'localhost:3000/portfolio/API/index.php';
+const API_PATH = 'https://marcorezende.github.io/portfolio/API/index.php';
 
 class Contacts extends Component {
 	state = {
