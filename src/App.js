@@ -25,9 +25,9 @@ class App extends Component {
           <header className="App-header">
             <nav>
               <ul className="nav">
-                <li className="nav-item"><Link to="/portfolio/sobre-mim"><i className="fas fa-address-card"></i>sobre mim</Link></li>
+                <li className="nav-item"><Link to="/sobre-mim"><i className="fas fa-address-card"></i>sobre mim</Link></li>
                 <li className="nav-item"><Link to="/portfolio"><i class="fas fa-book"></i>portfólio</Link></li>
-                <li className="nav-item"><Link to="/portfolio/contatos"><i className="fas fa-mail-bulk"></i>contatos</Link></li>
+                <li className="nav-item"><Link to="/contatos"><i className="fas fa-mail-bulk"></i>contatos</Link></li>
               </ul>
             </nav>
           </header>
@@ -35,7 +35,7 @@ class App extends Component {
 
           
 
-          <Route path="/" exact render={() => (
+          <Route path="/portfolio" exact render={() => (
               <Portfolio/>
           )}/>
           <Route path="/sobre-mim" exact render={() => (
