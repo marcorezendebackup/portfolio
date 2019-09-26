@@ -14,8 +14,8 @@ class App extends Component {
   render() {
     const paths = []
 
-    for (let i = 0; i < portfolioData.length; i++) {
-      paths.push(`/portfolio/${portfolioData[i].id}`)
+    for (let i = 0; i < portfolioData.portfolio.length; i++) {
+      paths.push(`/portfolio/${portfolioData.portfolio[i].id}`)
     }
 
     return (

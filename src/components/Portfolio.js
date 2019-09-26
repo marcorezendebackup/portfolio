@@ -70,7 +70,7 @@ class Home extends Component {
 				        onSlideChanged={this.handleOnSlideChange}
 				        onResized={this.handleOnSlideChange}
 					>
-					{portfolioData.map((item) => (
+					{portfolioData.portfolio.map((item) => (
 						<div className="home-portifolio-item">	
 						  <div className="home-portifolio-item-img-container">
 						  	<div className="wrapper-image" >

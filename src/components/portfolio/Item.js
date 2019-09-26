@@ -49,9 +49,9 @@ class Portfolio extends Component {
 		const { currentIndex, galleryItems, responsive } = this.state
 		let portfolioItem = '';
 
-		for (let i = 0; i < portfolioData.length; i++) {
-			if (portfolioData[i].id === pagePath) {
-				portfolioItem = portfolioData[i];
+		for (let i = 0; i < portfolioData.portfolio.length; i++) {
+			if (portfolioData.portfolio[i].id === pagePath) {
+				portfolioItem = portfolioData.portfolio[i];
 			}
 		}
 

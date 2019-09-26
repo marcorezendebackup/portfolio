@@ -1,40 +1,40 @@
 import React, { Component } from 'react';
+import portfolioData from '../data.json'
 
 class AboutMe extends Component {
 	render() {
 		return (
 			<section className="about-me">
-				<ul className="about-me">
-					<li className="icon-container">
-						<div className="icon">
-							<img src="imgs/diploma.svg" className="diploma-icon" style={{"verticalAlign":"top", "marginRight": "4px"}}/>
-							<span>Formação</span>
+				<div className="perfil">
+					<div className="perfil-header">
+						<img src="http://dev.bts.com/sf-images/default-source/default-album/content-header-feb-19-sales-index.jpg"/>
+					</div>
+					<div className="perfil-image">
+						<img src="https://pm1.narvii.com/6524/99ed5662082a902b0e0a3c7626581cd09a105ded_hq.jpg"/>
+					</div>
+					<div className="perfil-data">
+						<span id="name">Marco Rezende dos Santos</span>
+						<span id="role">Web Developer Front End</span>
+					</div>
+				</div>
+
+				<div className="academic-formation">
+					<h2>Formação Academica</h2>
+					{portfolioData.aboutMeData.formacion.map((item) => (
+						<div className="academic-formation-item" key={item.id}>
+							<div className="academic-institution-image">
+								<img src={item.logo}/>
+							</div>
+							<div className="formation-data">
+								<span className="academic-institution-name">{item.institutionName}</span>
+								<div className="formation-info">
+									<span> {item.courseName} </span>
+									<span> {item.duration.date.from} ● {item.duration.date.to} ({item.duration.time})</span>
+								</div>
+							</div>
 						</div>
-						<div>
-							<p>Web Developer (Udacity) ● <b><i>12/2018 - 10/2019</i></b></p>
-							<p>Tecnico em Eletroeletronica (SENAI) ● <b><i>01/2016 - 12/2017</i></b></p>
-						</div>
-					</li>
-					<li className="icon-container">
-						<div className="icon">
-							<i className="fas fa-birthday-cake" style={{"verticalAlign":"top"}}></i>
-							<span>Idade</span>
-						</div>
-						<div>
-							<p>20 anos <b><i>(08/05/1999)</i></b></p>
-						</div>
-					</li>
-					<li className="icon-container">
-						<div className="icon">
-							<i className="fas fa-suitcase" style={{"verticalAlign":"top"}}></i>
-							<span>Experiência Profissional</span>
-						</div>
-						<div>
-							<p>PLURAL Indústria Gráfica <b><i>(Ajudante Geral)</i></b>● <b><i>04/2018 - 06/2018</i></b></p>
-							<p>Vision Byte <b><i>(Estagiário)</i></b>● <b><i>10/2017 - 12/2017</i></b></p>
-						</div>
-					</li>
-				</ul>
+					))}
+				</div>
 			</section>
 		)
 	}

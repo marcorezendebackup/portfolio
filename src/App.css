@@ -251,34 +251,141 @@ footer {
   }
 }
 
-/* sobre-mim */
+/* ------------------- sobre-mim ---------------------*/
 
 .about-me {
   margin: 0 auto;
+  width: 80%;
 }
 
-.icon-container div:last-child p {
-  background-color: rgba(255,255,255,.25) !important;
-  margin: 5px auto !important;
-  text-decoration: none;
-  list-style: none;
-  padding: 2px 10px;
+/* header */
+
+.perfil {
+  width: 100%;
+  height: 270px;
+  background-color: var(--dark-mode-bg-secondary);
+  position: relative;
+  box-shadow: 0 16px 44px -4px rgba(0,0,0,.3);
 }
 
-.icon-container div:last-child p b i {
-  font-size: 9pt;
+.perfil-header {
+  height: 53%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
 }
 
-.icon {
-  background-color: rgba(255,255,255,.1) !important;
-  padding: 4px !important;
+.perfil-header img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
 }
 
-.diploma-icon {
-  width: 20px !important;
+.perfil-image {
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  transform: translate(0,-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,.1);
+  box-shadow: 14px 16px 24px -4px rgba(0,0,0,.1);
+  overflow: hidden;
+  margin: 0 10px;
 }
 
-/*contattos */
+.perfil-image img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.perfil-data {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  transform: translate(0,0);
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.perfil-data #name {
+  font-size: 12pt;
+  font-weight: bolder;
+}
+
+.perfil-data #role {
+  font-size: 10pt;
+}
+
+.perfil-data #age {
+  font-size: 10pt;
+}
+
+.perfil-data span {
+  display: block;
+  text-align: left;
+}
+
+/* formação academica */
+
+.academic-formation {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.academic-formation-item {
+  margin: 20px 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--dark-mode-bg-secondary);
+  box-shadow: 14px 16px 24px -4px rgba(0,0,0,.5);
+  border-top-right-radius: 10em;
+  border-bottom-right-radius: 10em;
+}
+
+.academic-institution-image {
+  display: inline-block;
+  width: 120px;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+
+.academic-institution-image img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.formation-data {
+  display: inline-block;
+  width: calc(100% - 120px);
+  vertical-align: top;
+  text-align: left;
+  padding: 10px;
+}
+
+.formation-data .academic-institution-name {
+  font-size: 14pt;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.formation-info {
+  display: block;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.formation-info span {
+  display: block;
+}
+
+/*contatos */
 
 .contacts-container {
   overflow: hidden;
@@ -289,61 +396,6 @@ footer {
   margin: 0 0 50px;
 }
 
-.container-contact {
-  width: 50%;
-  height: 100%;
-  display: inline-block;
-}
-
-.wrap-contact {
-  text-align: left;
-  color: #fff;
-}
-
-.wrap-contact .input {
-  width: 100%;
-  border-radius: 0;
-  background-color: rgba(255,255,255,.05);
-  border: none;
-  padding: 5px;
-  height: 35px;
-  color: #fff;
-  margin: 0 0 10px;
-}
-
-.wrap-contact .input:focus {
-  outline: none !important;
-  box-shadow: none;
-}
-
-.message {
-  height: 120px !important;
-}
-
-.contact-form {
-  width: 80%;
-  height: 100%;
-  padding: 0;
-}
-
-.input-title {
-  text-align: left;
-}
-
-.submit-btn {
-  padding: 5px 7px 5px 5px;
-  background-color: rgba(255,255,255,.05);
-  color: #fff;
-  border: none;
-  border-left: 3px solid rgba(255,255,255,0);
-  transition: all .2s ease;
-}
-
-.submit-btn:hover {
-  background-color: rgba(34,90,148, 0.3);
-  color: #fff;
-  border-left: 3px solid rgba(60,96,190, 1);
-}
 
 .mapboxgl-map {
   width: 100% !important;
@@ -353,7 +405,7 @@ footer {
 
 .address-and-contacts {
   display: block;
-  float: right;
+  float: left;
   text-align: right;
   width: 50%;
   display: inline-block;
@@ -501,6 +553,3 @@ footer {
   }
 }
 
-@media screen and (min-width: 1300px) {
-  
-}
