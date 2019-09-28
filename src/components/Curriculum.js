@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+
+class Curriculum extends Component {
+	render() {
+		return (
+			<div className="curriculum-container">
+				<div className="curriculum">
+					<div className="curriculum-icon-wrapper">
+						<i className="fas fa-file-alt"></i>
+					</div>
+					<button className="btn-download"><a><i className="fas fa-long-arrow-alt-down"></i>Currículo</a></button>
+				</div>
+			</div>
+		)
+	}
+}
+
+export default Curriculum ;

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import portfolioData from '../../data.json'
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
+import Modal from './item/Modal';
+import $ from 'jquery';
 
 class Portfolio extends Component {
 	state = {
@@ -42,7 +44,17 @@ class Portfolio extends Component {
 	    const { itemsInSlide, item } = event
 	    this.setState({ itemsInSlide, currentIndex: item })
 	}
-    
+
+    toggleClass = (eleClass) => {
+    	$(eleClass).on("mousedown touchstart", function(e) {
+		    $(this).addClass('grabbing')
+		})
+
+		$(eleClass).on("mouseup touchend", function(e) {
+		    $(this).removeClass('grabbing')
+		})
+    }
+
 	render() {
 		const { pagePath } = this.state;
 		const handleOnDragStart = e => e.preventDefault();
@@ -55,10 +67,11 @@ class Portfolio extends Component {
 			}
 		}
 
+		
 		return (
 			<section className="item-page">
 				<h1>{portfolioItem.title}</h1>
-				<a href={portfolioItem.githubLink} target="_blank"><i class="fab fa-github"></i>Acesse o repositório agora mesmo</a>
+				<a href={portfolioItem.githubLink} target="_blank"><i class="fab fa-github"></i>Repositório</a>
 				{portfolioItem.liveDemo !== undefined &&
 					<a href={portfolioItem.liveDemo} target="_blank" className="last-link"><i class="fas fa-globe"></i>Live Demo</a>
 				}
@@ -70,8 +83,7 @@ class Portfolio extends Component {
 					<AliceCarousel 
 						mouseDragEnabled
 						buttonsDisabled={true}
-						autoPlayInterval={3000}
-						autoPlay={true}
+						autoPlay={false}
 						items={galleryItems}
 				        slideToIndex={currentIndex}
 				        responsive={responsive}
@@ -81,7 +93,8 @@ class Portfolio extends Component {
 					>
 					{portfolioItem.screenshots.map((item) => (
 						<div className="item-screenshots">	
-						  	<img src={item} onDragStart={handleOnDragStart} />
+						  	<img className="item-image" src={item} onDragStart={handleOnDragStart} onClick={() => this.toggleClass(".item-image")} />
+							<Modal item={item}/>
 						</div>	
 					))}
 					</AliceCarousel>

@@ -3,6 +3,7 @@ import portfolioData from '../data.json'
 import { Link } from 'react-router-dom'
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
+import $ from 'jquery'; 
 
 class Home extends Component {
 	state = {
@@ -49,6 +50,16 @@ class Home extends Component {
 	    this.setState({ itemsInSlide, currentIndex: item })
 	}
 
+	toggleClass = (eleClass) => {
+    	$(eleClass).on("mousedown touchstart", function(e) {
+		    $(this).addClass('grabbing')
+		})
+
+		$(eleClass).on("mouseup touchend", function(e) {
+		    $(this).removeClass('grabbing')
+		})
+    }
+
 	render() {
 		const handleOnDragStart = e => e.preventDefault();
 		const { currentIndex, galleryItems, responsive } = this.state
@@ -57,12 +68,12 @@ class Home extends Component {
 			<div className="home-container">
 				<h2 className="title">Olá! Seja Bem-Vindo</h2>
 				<p className="wlc">Navegue pelo site e descubra um pouco mais sobre mim e meu trabalho até aqui.</p>
-				<section className="home-portifolio-container">
+				<section className="home-portfolio-container">
 					<AliceCarousel 
 						mouseDragEnabled
 						buttonsDisabled={true}
 						autoPlayInterval={3000}
-						autoPlay={false}
+						autoPlay={true}
 						items={galleryItems}
 				        slideToIndex={currentIndex}
 				        responsive={responsive}
@@ -71,15 +82,15 @@ class Home extends Component {
 				        onResized={this.handleOnSlideChange}
 					>
 					{portfolioData.portfolio.map((item) => (
-						<div className="home-portifolio-item">	
-						  <div className="home-portifolio-item-img-container">
+						<div className="home-portfolio-item">	
+						  <div className="home-portfolio-item-img-container">
 						  	<div className="wrapper-image" >
 						  	<Link to={`/portfolio/${item.id}`}>
-						  		<img src={`/imgs/${item.img}`} onDragStart={handleOnDragStart} alt={item.shortDescription} />
+						  		<img className="portfolio-image" src={`/imgs/${item.img}`} onDragStart={handleOnDragStart} alt={item.shortDescription} />
 						  	</Link>
 						  	</div>	
 						  </div>
-						  <div className="home-portifolio-item-info">
+						  <div className="home-portfolio-item-info" onClick={() => this.toggleClass(".home-portfolio-item-info")}>
 						  	<h4> {item.title} </h4>
 						  	<p> {item.shortDescription} </p>
 						  </div>

@@ -20,7 +20,7 @@ class App extends Component {
 
     return (
       <div className="App">
-      <Route path="/" render={() => (
+      <Route path={['/portfolio', '/sobre-mim', '/contatos']} render={() => (
         <div>
           <header className="App-header">
             <nav>
@@ -32,8 +32,6 @@ class App extends Component {
             </nav>
           </header>
           <main className="main">
-
-          
 
           <Route path="/portfolio" exact render={() => (
               <Portfolio/>

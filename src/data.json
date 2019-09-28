@@ -86,7 +86,8 @@
 						"No desenvolvimento desta aplicação, foram utilizados recursos tais quais jQuery, SweetAlert (Modal) e Font Awesome.",
 						"Esta jogo se faz possível graças a hierarquia prototípica. O cenário e os personagens, assim como cada movimento, são gerados com base no canvas."
 					],
-					"githubLink": "",
+					"githubLink": "https://github.com/MarcoRezende/frontend-nanodegree-arcade-game",
+					"liveDemo": "https://marcorezende.github.io/frontend-nanodegree-arcade-game/",
 					"screenshots": [
 						"https://i.imgur.com/RlmT9qP.png",
 						"https://i.imgur.com/r3fUm6Y.png",
@@ -117,11 +118,11 @@
 					},
 					{
 						"institutionName": "GRÁFICA PLURAL",
-						"courseName": "Técnico em eletroeletrônica",
+						"courseName": "Auxiliar Gráfico",
 						"duration": {
 							"date": {
-								"from": "02/2018",
-								"to": "12/2018"
+								"from": "04/2017",
+								"to": "10/2018"
 							},
 							"time": "6 meses"
 						},
@@ -133,13 +134,41 @@
 						"courseName": "Técnico em eletroeletrônica",
 						"duration": {
 							"date": {
-								"from": "02/2016",
-								"to": "12/2017"
+								"from": "02/2015",
+								"to": "12/2016"
 							},
 							"time": "2 anos"
 						},
 						"id": "senai0",
 						"logo": "https://arquivos.sfiec.org.br/sfiec/files/images/LOGO_SENAI.jpg"
+					}
+				],
+				"proExperience": [
+					{
+						"companyName": "PLURAL INDUSTRIA GRÁFICA",
+						"duration": {
+							"date": {
+								"from": "03/2018",
+								"to": "06/2018"
+							},
+							"time": "3 meses"
+						},
+						"role": "Ajudante Geral",
+						"id": "plural1",
+						"logo": "https://pbs.twimg.com/profile_images/1095769536203288576/O3QHzvlY.png"
+					},
+					{
+						"companyName": "VISION BYTE",
+						"duration": {
+							"date": {
+								"from": "10/2015",
+								"to": "12/2016"
+							},
+							"time": "2 meses"
+						},
+						"role": "Mantenedor Eletronico (Estágio)",
+						"id": "visionbite0",
+						"logo": "https://pbs.twimg.com/profile_images/1095769536203288576/O3QHzvlY.png"
 					}
 				]
 			}
