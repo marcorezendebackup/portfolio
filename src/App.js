@@ -3,8 +3,7 @@ import logo from './ex.jpg';
 import './App.css';
 import Portfolio from './components/Portfolio.js'
 import AboutMe from './components/AboutMe.js'
-import { Link } from 'react-router-dom'
-import { Route } from 'react-router-dom'
+import { HashRouter, Route, Link } from 'react-router-dom'
 import portfolioData from './data.json'
 import Item from './components/portfolio/Item.js'
 import Contacts from './components/Contacts.js'
@@ -20,7 +19,7 @@ class App extends Component {
 
     return (
       <div className="App">
-      <Route path={['/portfolio', '/sobre-mim', '/contatos']} render={() => (
+      <HashRouter basename="/">
         <div>
           <header className="App-header">
             <nav>
@@ -48,7 +47,7 @@ class App extends Component {
           </main>
 
           </div>
-      )}/>
+        </HashRouter>
             <footer>Marco Rezende® 2019 | Site desenvolvido com React
             </footer>
       </div>
