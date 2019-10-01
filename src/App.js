@@ -25,14 +25,14 @@ class App extends Component {
             <nav>
               <ul className="nav">
                 <li className="nav-item"><Link to="/sobre-mim"><i className="fas fa-address-card"></i>sobre mim</Link></li>
-                <li className="nav-item"><Link to="/portfolio"><i class="fas fa-book"></i>portfólio</Link></li>
+                <li className="nav-item"><Link to="/"><i class="fas fa-book"></i>portfólio</Link></li>
                 <li className="nav-item"><Link to="/contatos"><i className="fas fa-mail-bulk"></i>contatos</Link></li>
               </ul>
             </nav>
           </header>
           <main className="main">
 
-          <Route path="/portfolio" exact render={() => (
+          <Route path="/" exact render={() => (
               <Portfolio/>
           )}/>
           <Route path="/sobre-mim" exact render={() => (
