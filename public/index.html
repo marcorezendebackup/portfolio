@@ -30,16 +30,6 @@
     <title>React App</title>
   </head>
   <body>
-    <?php
-      if(isset($_POST['submit']))
-        {
-          $to= "marcorezende@outlook.com.br";
-          $subject= "Subject for your email";
-          $msg= $_POST["message"];
-          $header= "Header for mail"
-          mail($to,$subject,$msg,$header);
-        }
-    ?>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

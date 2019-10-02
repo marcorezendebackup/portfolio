@@ -86,7 +86,7 @@ class Home extends Component {
 						  <div className="home-portfolio-item-img-container">
 						  	<div className="wrapper-image" >
 						  	<Link to={`/portfolio/${item.id}`}>
-						  		<img className="portfolio-image" src={`/imgs/${item.img}`} onDragStart={handleOnDragStart} alt={item.shortDescription} />
+						  		<img className="portfolio-image" src={process.env.PUBLIC_URL + `/imgs/${item.img}`} onDragStart={handleOnDragStart} alt={item.shortDescription} />
 						  	</Link>
 						  	</div>	
 						  </div>
