@@ -110,11 +110,10 @@ li.nav-item:hover:after {
 }
 
 .short-nav-item-icon {
-  font-size: 22pt !important;
+  font-size: 18pt !important;
+  width: 100%;
   padding: 15px;
 }
-
-
 
 /* Home/Portfólio */
 .home-container {
