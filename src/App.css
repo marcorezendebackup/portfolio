@@ -349,6 +349,7 @@ footer {
   height: 150px;
   border-radius: 50%;
   border: 5px solid rgba(255,255,255,.1);
+  background-color: rgba(27, 41, 54, .8);
   box-shadow: 14px 16px 24px -4px rgba(0,0,0,.1);
   overflow: hidden;
   margin: 0 10px;
@@ -613,20 +614,22 @@ footer {
 /* ----------- media querie ------------ */
 
 @media screen and (max-width: 900px) {
+  /* sobre mim */
   .about-me {
     width: 100%;
   }
-
+  /* contatos */
   .contacts-container {
     width: 95%;
   }
-
+  /* portfolio item */
   .item-page {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 600px) and (min-width: 481px) {
+  /* contatos */
   .contacts-container {
     width: 100%;
     height: 100%;
@@ -639,11 +642,98 @@ footer {
     height: 25vh !important;
     margin: 0 0 15px 0;
   }
+  /* sobre mim */
+  .academic-and-company h2, .academic-and-company-icon {
+    font-size: 18pt;
+  }
+
+  .academic-and-company-item {
+    height: 120px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+  }
+
+  .academic-and-company-data .academic-and-company-name {
+    font-size: 13pt;
+  }
+
+  .academic-and-company-info {
+    font-size: 10pt;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 381px) {
   .main {
     width: 95%;
+  }
+  /* sobre mim */
+  .academic-and-company h2, .academic-and-company-icon {
+    font-size: 14pt;
+  }
+
+  .academic-and-company-item {
+    height: 120px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+  }
+
+  .academic-and-company-data .academic-and-company-name {
+    font-size: 10pt;
+  }
+
+  .academic-and-company-info {
+    font-size: 10pt;
+  }
+
+  .curriculum-container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main {
+    width: 95%;
+  }
+  /* sobre mim */
+  .perfil-data #name {
+    font-size: 10pt;
+    font-weight: bolder;
+  }
+
+  .perfil-data #role {
+    font-size: 8pt;
+  }
+
+  .social-data .fa-github, .fa-linkedin {
+    font-size: 18pt;
+    transition: color .2s ease;
+  }
+
+  .academic-and-company {
+    margin: 20px 0 30px;
+    width: 100%;
+    background-color: var(--dark-mode-bg-tertiary);
+    padding: 10px;
+    border-radius: 1em;
+  }
+
+  .academic-and-company-image {
+    display: inline-block;
+    width: 100px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--dark-mode-bg-primary);
+  }
+
+  .academic-and-company-data {
+    display: inline-block;
+    width: calc(100% - 100px);
+    vertical-align: top;
+    text-align: left;
+    padding: 10px;
   }
 
   .academic-and-company h2, .academic-and-company-icon {
@@ -651,9 +741,9 @@ footer {
   }
 
   .academic-and-company-item {
-    height: 120px;
-    border-top-right-radius: 3em;
-    border-bottom-right-radius: 3em;
+    height: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     overflow: hidden;
   }
 
@@ -663,6 +753,7 @@ footer {
 
   .academic-and-company-info {
     font-size: 8pt;
+    margin: 8px 0;
   }
 
   .curriculum-container {

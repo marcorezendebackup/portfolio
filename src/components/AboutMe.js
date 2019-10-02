@@ -22,7 +22,7 @@ class AboutMe extends Component {
 						<img className="banner" src="http://dev.bts.com/sf-images/default-source/default-album/content-header-feb-19-sales-index.jpg"/>
 					</div>
 					<div className="perfil-image">
-						<img className="me" src="https://pm1.narvii.com/6524/99ed5662082a902b0e0a3c7626581cd09a105ded_hq.jpg"/>
+						<img className="me" src="https://m1.narvii.com/6524/99ed5662082a902b0e0a3c7626581cd09a105ded_hq.jpg"/>
 					</div>
 					<div className="perfil-data">
 						<div className="basic-data">
