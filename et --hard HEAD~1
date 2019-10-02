@@ -1,0 +1,101 @@
+[33mcommit 713d470013643ba4a34143b33815c1ce798170d6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Wed Oct 2 20:20:43 2019 -0300
+
+    adicionando ao perfil
+
+[33mcommit c287d1e311b201236f9b10cbd078f48c472c5f09[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Wed Oct 2 20:18:34 2019 -0300
+
+    adicionando nav somente com icones para screens menores que 500px
+
+[33mcommit 7f29752d31269fd5a54be5c87ba38ad72650075a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Wed Oct 2 17:23:40 2019 -0300
+
+    adicionando media querie à página "home/portfolio"
+
+[33mcommit 0381f310652c7d14abd120116c092563301a418b[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Wed Oct 2 16:54:30 2019 -0300
+
+    adicionando media querie à página "sobre-mim"
+
+[33mcommit 75b191380097a6e1f003cd7060c9cece7017b299[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Oct 1 21:30:44 2019 -0300
+
+    adicionando "process.env.PUBLIC_URL" para acessar imagens
+
+[33mcommit 3bd1adfa86c6813dce4c6559e30e120d2374d8f2[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Oct 1 21:23:37 2019 -0300
+
+    adicionando, novamente, HashRouter
+
+[33mcommit 23d203ba6f7a8611aa1ed0d13e20c91065d3c0ce[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Oct 1 20:25:30 2019 -0300
+
+    removendo HashRouter e adicionando, novamente, Router
+
+[33mcommit 4893751808fe73a728ab2af8f09f4559fb26c3e0[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Oct 1 18:18:50 2019 -0300
+
+    editando rotas do Link e Router
+
+[33mcommit 0f56f7a88cbbd39b1cf2eca30a67a9110c70f131[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Oct 1 17:58:01 2019 -0300
+
+    adicionando HashRouter
+
+[33mcommit a44859e6da17f68eca7b02a425f4e71ab59e130a[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Sat Sep 28 01:25:34 2019 -0300
+
+    adicionando media queries
+
+[33mcommit d97c481a8e4e0e357b3ceaf9e73d8ec131461db4[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Thu Sep 26 16:28:58 2019 -0300
+
+    reformulando "sobre mim"
+
+[33mcommit f622e8e1b806ca653bc32eadadc8335baa94e4b2[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Sep 24 23:46:16 2019 -0300
+
+    alterando API_PATH
+
+[33mcommit 7f9ce7a02e2c5e15865dfcd0c3eadd69dbea5644[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Sep 24 23:06:11 2019 -0300
+
+    alterando rotas do navbar
+
+[33mcommit 0a074698886a8eab7169f37e96e9122834ad81cb[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Sep 24 22:53:32 2019 -0300
+
+    alterando API_PATH e rotas do navbar
+
+[33mcommit 22f9ff0cba0fe058f6d9bdb488a68f7b54881010[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Tue Sep 24 21:29:31 2019 -0300
+
+    adicionando formulario e mapa à pagina de contatos
+
+[33mcommit 4b6f8b2fe54b883a827659c3cc0304bb3a9c90cf[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Wed Sep 18 14:47:51 2019 -0300
+
+    true commit
+
+[33mcommit 0f5293329d3cc7da41cf303eae7bfe5b43ef75d4[m
+Author: Marco <marcorezende@outlook.com.br>
+Date:   Sun Sep 8 15:31:55 2019 -0300
+
+    Initial commit from Create React App
