@@ -8,6 +8,13 @@ class AboutMe extends Component {
 		width: ''
 	}
 	render() {
+
+	var url = $(window.location).attr('href'),
+	    parts = url.split("/"),
+	    last_part = parts[parts.length-1];
+	    console.log(last_part)
+
+    console.log(url)
 		return (
 			<section className="about-me">
 				<div className="perfil">

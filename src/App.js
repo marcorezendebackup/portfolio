@@ -3,12 +3,10 @@ import logo from './ex.jpg';
 import './App.css';
 import Portfolio from './components/Portfolio.js'
 import AboutMe from './components/AboutMe.js'
-import { Link } from 'react-router-dom'
-import { Route } from 'react-router-dom'
+import { HashRouter, Route, Link } from 'react-router-dom'
 import portfolioData from './data.json'
 import Item from './components/portfolio/Item.js'
 import Contacts from './components/Contacts.js'
-import { Redirect } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -19,40 +17,39 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-      <Route path={['/portfolio', '/sobre-mim', '/contatos', paths]} exact render={() => (
-        <div>
-          <header className="App-header">
-            <nav>
-              <ul className="nav">
-                <li className="nav-item"><Link to="/sobre-mim"><i className="fas fa-address-card"></i>sobre mim</Link></li>
-                <li className="nav-item"><Link to="/portfolio"><i class="fas fa-book"></i>portfólio</Link></li>
-                <li className="nav-item"><Link to="/contatos"><i className="fas fa-mail-bulk"></i>contatos</Link></li>
-              </ul>
-            </nav>
-          </header>
-          <main className="main">
+    <HashRouter basename="/">
+        <Route path={['/portfolio', '/sobre-mim', '/contatos', paths]} exact render={() => (
+	      <div className="App">
+	          <header className="App-header">
+	            <nav>
+	              <ul className="nav">
+	                <li className="nav-item"><Link to="/sobre-mim"><i className="fas fa-address-card"></i>sobre mim</Link></li>
+	                <li className="nav-item"><Link to="/portfolio"><i class="fas fa-book"></i>portfólio</Link></li>
+	                <li className="nav-item"><Link to="/contatos"><i className="fas fa-mail-bulk"></i>contatos</Link></li>
+	              </ul>
+	            </nav>
+	          </header>
+	          <main className="main">
 
-          <Route path="/portfolio" exact render={() => (
-              <Portfolio/>
-          )}/>
-          <Route path="/sobre-mim" exact render={() => (
-              <AboutMe/>
-          )}/>
-          <Route path={[paths]} exact render={() => (
-              <Item/>
-          )}/>
-          <Route path="/contatos" exact render={() => (
-              <Contacts/>
-          )}/>
-          </main>
+	          <Route path="/portfolio" exact render={() => (
+	              <Portfolio/>
+	          )}/>
+	          <Route path="/sobre-mim" exact render={() => (
+	              <AboutMe/>
+	          )}/>
+	          <Route path={[paths]} exact render={() => (
+	              <Item/>
+	          )}/>
+	          <Route path="/contatos" exact render={() => (
+	              <Contacts/>
+	          )}/>
+	          </main>
 
-          <footer>Marco Rezende® 2019 | Site desenvolvido com React</footer>
-          </div>
-     )}/>     
-      </div>
+	          <footer>Marco Rezende® 2019 | Site desenvolvido com React</footer>
+	      </div>
+      )}/>     
+    </HashRouter>
       
-        
        
     )
   };

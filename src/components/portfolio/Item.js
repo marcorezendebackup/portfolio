@@ -7,7 +7,7 @@ import $ from 'jquery';
 
 class Portfolio extends Component {
 	state = {
-		pagePath: window.location.pathname.split("/").pop(),
+		pagePath: $(window.location).attr('href').split("/").slice(-1).pop(),
 	    currentIndex: 0,
 	    itemsInSlide: 1,
 	    responsive: {
