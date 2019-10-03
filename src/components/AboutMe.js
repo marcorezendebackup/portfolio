@@ -33,7 +33,12 @@ class AboutMe extends Component {
 					{portfolioData.aboutMeData.formacion.map((item) => (
 						<div className="academic-and-company-item" key={item.id}>
 							<div className="academic-and-company-image">
-								<img className="logo" src={item.logo} alt="Logo da instituição"/>
+								<picture>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.logo}-high.png`} media="(min-width: 1500px)"/>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.logo}-medium.png`} media="(max-width: 600px) and (min-width: 351px)"/>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.logo}-low.png`} media="(max-width: 350px)"/>
+									<img className="logo" src={process.env.PUBLIC_URL + `/imgs/${item.logo}-medium.png`} alt="Logo da instituição"/>
+								</picture>
 							</div>
 							<div className="academic-and-company-data">
 								<span className="academic-and-company-name">{item.institutionName}</span>
@@ -51,7 +56,12 @@ class AboutMe extends Component {
 					{portfolioData.aboutMeData.proExperience.map((item) => (
 						<div className="academic-and-company-item" key={item.id}>
 							<div className="academic-and-company-image">
-								<img className="logo" src={item.logo} alt="Logo da empresa"/>
+								<picture>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.logo}-high.png`} media="(min-width: 1500px)"/>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.logo}-medium.png`} media="(max-width: 600px) and (min-width: 351px)"/>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.logo}-low.png`} media="(max-width: 350px)"/>
+								    <img className="logo" src={process.env.PUBLIC_URL + `/imgs/${item.logo}-medium.png`} alt="Logo da empresa"/>
+								</picture>
 							</div>
 							<div className="academic-and-company-data">
 								<span className="academic-and-company-name">{item.companyName}</span>
