@@ -82,7 +82,7 @@ class Home extends Component {
 				        onResized={this.handleOnSlideChange}
 					>
 					{portfolioData.portfolio.map((item) => (
-						<div className="home-portfolio-item">	
+						<div className="home-portfolio-item" key={item.id}>	
 						  <div className="home-portfolio-item-img-container">
 						  	<div className="wrapper-image" >
 						  	<Link to={`/portfolio/${item.id}`}>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
+import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 import marker from '../marker.png';
 import Curriculum from './Curriculum'
 
@@ -19,7 +19,7 @@ class Contacts extends Component {
 						  zoom={[15]}
 						>
 						  <Marker coordinates={[-46.805412 ,  -23.41517]}>
-				          	<img src={marker}/>
+				          	<img src={marker} alt="Marcador"/>
 				          </Marker>
 						</Map>
 						<div className="contacts">
@@ -28,10 +28,10 @@ class Contacts extends Component {
 								<span>Colinas da Anhanguera</span>
 								<span>Av. Aloísio Magalhães, Nº 211</span>
 								<div className="contacts-extra">
-									<span><a href="https://github.com/marcorezende" target="_blank"><i className="fab fa-github"></i><p className="contact-content link">GitHub</p></a></span>
-									<span><a href="https://www.linkedin.com/in/marco-rezende-dos-santos/" target="_blank"><i className="fab fa-linkedin"></i><p className="contact-content link">Linkedin</p></a></span>
-									<span><i class="fas fa-envelope"></i><p className="contact-content">marcorezende@outlook.com.br</p></span>
-									<span><i class="fas fa-phone-square-alt"></i><p className="contact-content">(11) 4157-2960</p></span>
+									<span><a href="https://github.com/marcorezende" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i><p className="contact-content link">GitHub</p></a></span>
+									<span><a href="https://www.linkedin.com/in/marco-rezende-dos-santos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i><p className="contact-content link">Linkedin</p></a></span>
+									<span><i className="fas fa-envelope"></i><p className="contact-content">marcorezende@outlook.com.br</p></span>
+									<span><i className="fas fa-phone-square-alt"></i><p className="contact-content">(11) 4157-2960</p></span>
 								</div>
 							</div>
 							<div className="contacts-right">

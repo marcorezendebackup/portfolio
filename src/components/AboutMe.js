@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
 import portfolioData from '../data.json'
 import Curriculum from './Curriculum'
-import $ from 'jquery'; 
 
 class AboutMe extends Component {
 	state = {
 		width: ''
 	}
 	render() {
-
-	var url = $(window.location).attr('href'),
-	    parts = url.split("/"),
-	    last_part = parts[parts.length-1];
-	    console.log(last_part)
-
-    console.log(url)
 		return (
 			<section className="about-me">
 				<div className="perfil">
 					<div className="perfil-header">
-						<img className="banner" src="http://dev.bts.com/sf-images/default-source/default-album/content-header-feb-19-sales-index.jpg"/>
+						<img className="banner" src="http://dev.bts.com/sf-images/default-source/default-album/content-header-feb-19-sales-index.jpg" alt="Banner"/>
 					</div>
 					<div className="perfil-image">
-						<img className="me" src="https://m1.narvii.com/6524/99ed5662082a902b0e0a3c7626581cd09a105ded_hq.jpg"/>
+						<img className="me" src="https://pm1.narvii.com/6524/99ed5662082a902b0e0a3c7626581cd09a105ded_hq.jpg" alt="Imagem de perfil do dev da aplicação"/>
 					</div>
 					<div className="perfil-data">
 						<div className="basic-data">
@@ -30,18 +22,18 @@ class AboutMe extends Component {
 							<span id="role">Web Developer Front End</span>
 						</div>
 						<div className="social-data">
-							<span id="github"><a href="https://github.com/marcorezende" target="_blank"><i className="fab fa-github"></i></a></span>
-							<span id="linkedin"><a href="https://www.linkedin.com/in/marco-rezende-dos-santos/" target="_blank"><i className="fab fa-linkedin"></i></a></span>
+							<span id="github"><a href="https://github.com/marcorezende" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a></span>
+							<span id="linkedin"><a href="https://www.linkedin.com/in/marco-rezende-dos-santos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a></span>
 						</div>
 					</div>
 				</div>
 	
 				<div className="academic-and-company">
-					<h2><i class="academic-and-company-icon fas fa-user-graduate"></i>Formação Acadêmica</h2>
+					<h2><i className="academic-and-company-icon fas fa-user-graduate"></i>Formação Acadêmica</h2>
 					{portfolioData.aboutMeData.formacion.map((item) => (
 						<div className="academic-and-company-item" key={item.id}>
 							<div className="academic-and-company-image">
-								<img className="logo" src={item.logo}/>
+								<img className="logo" src={item.logo} alt="Logo da instituição"/>
 							</div>
 							<div className="academic-and-company-data">
 								<span className="academic-and-company-name">{item.institutionName}</span>
@@ -55,12 +47,11 @@ class AboutMe extends Component {
 				</div>
 				
 				<div className="academic-and-company">
-					<h2><i class="academic-and-company-icon fas fa-user-check"></i>Experiência Profissional</h2>
-					{console.log(portfolioData.aboutMeData.proExperience)}
+					<h2><i className="academic-and-company-icon fas fa-user-check"></i>Experiência Profissional</h2>
 					{portfolioData.aboutMeData.proExperience.map((item) => (
 						<div className="academic-and-company-item" key={item.id}>
 							<div className="academic-and-company-image">
-								<img className="logo" src={item.logo}/>
+								<img className="logo" src={item.logo} alt="Logo da empresa"/>
 							</div>
 							<div className="academic-and-company-data">
 								<span className="academic-and-company-name">{item.companyName}</span>

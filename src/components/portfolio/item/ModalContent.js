@@ -5,7 +5,7 @@ class ModalContent extends Component {
 		const { image } = this.props
 
 		return (
-			<img className="modal-image" src={image}/>
+			<img className="modal-image" src={image} alt="Screenshot do projeto"/>
 		)
 	}
 }

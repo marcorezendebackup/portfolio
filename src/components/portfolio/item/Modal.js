@@ -22,7 +22,7 @@ class Modal extends Component {
 					text={renderToStaticMarkup(<ModalContent image={item}/>)}
 					onConfirm={() => this.setState({ show: false })}
 				/>
-				<button className='btn-open-img' onClick={() => this.setState({ show: true })}><i class="fas fa-search"></i></button>
+				<button className='btn-open-img' onClick={() => this.setState({ show: true })}><i className="fas fa-search"></i></button>
 			</div>
 		)
 	}

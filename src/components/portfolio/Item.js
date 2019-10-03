@@ -71,9 +71,9 @@ class Portfolio extends Component {
 		return (
 			<section className="item-page">
 				<h1>{portfolioItem.title}</h1>
-				<a href={portfolioItem.githubLink} target="_blank"><i class="fab fa-github"></i>Repositório</a>
+				<a href={portfolioItem.githubLink} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>Repositório</a>
 				{portfolioItem.liveDemo !== undefined &&
-					<a href={portfolioItem.liveDemo} target="_blank" className="last-link"><i class="fas fa-globe"></i>Live Demo</a>
+					<a href={portfolioItem.liveDemo} target="_blank" rel="noopener noreferrer" className="last-link"><i className="fas fa-globe"></i>Live Demo</a>
 				}
 				<div className="item-content">
 					{portfolioItem.longDescription.map((paragraph) => (
@@ -92,8 +92,8 @@ class Portfolio extends Component {
 				        onResized={this.handleOnSlideChange}
 					>
 					{portfolioItem.screenshots.map((item) => (
-						<div className="item-screenshots">	
-						  	<img className="item-image" src={item} onDragStart={handleOnDragStart} onClick={() => this.toggleClass(".item-image")} />
+						<div className="item-screenshots" key={item}>	
+						  	<img className="item-image" src={item} onDragStart={handleOnDragStart} onClick={() => this.toggleClass(".item-image")} alt="Screenshot do projeto"/>
 							<Modal item={item}/>
 						</div>	
 					))}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './ex.jpg';
 import './App.css';
 import Portfolio from './components/Portfolio.js'
 import AboutMe from './components/AboutMe.js'
@@ -37,13 +36,17 @@ class App extends Component {
     $(window).resize(function() {
     	let width = $(window).width()
     	if (width > 500) {
-	    	this.setState({ 
-	    		navFull: true 
-	    	})
+    		if (this.state.navFull === false) {
+		    	this.setState({ 
+		    		navFull: true 
+		    	})
+    		}
     	} else if (width < 500) {
-	    	this.setState({ 
-	    		navFull: false 
-	    	})
+    		if (this.state.navFull === true) {
+		    	this.setState({ 
+		    		navFull: false 
+		    	})
+    		}
     	}
     	
     }.bind(this))
@@ -64,7 +67,7 @@ class App extends Component {
 	                </li>
 	                <li className="nav-item">
 	                	<Link to="/">
-	                		<i class="fas fa-book"></i>portfólio
+	                		<i className="fas fa-book"></i>portfólio
 	                	</Link>
 	                </li>
 	                <li className="nav-item">
@@ -84,7 +87,7 @@ class App extends Component {
 	                </li>
 	                <li className="short-nav-item">
 	                	<Link to="/">
-	                		<i class="fas fa-book short-nav-item-icon"></i>
+	                		<i className="fas fa-book short-nav-item-icon"></i>
 	                	</Link>
 	                </li>
 	                <li className="short-nav-item">
