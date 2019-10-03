@@ -86,7 +86,12 @@ class Home extends Component {
 						  <div className="home-portfolio-item-img-container">
 						  	<div className="wrapper-image" >
 						  	<Link to={`/portfolio/${item.id}`}>
-						  		<img className="portfolio-image" src={process.env.PUBLIC_URL + `/imgs/${item.img}`} onDragStart={handleOnDragStart} alt={item.shortDescription} />
+						  		<picture>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.img}-high.png`} media="(min-width: 1500px)"/>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.img}-medium.png`} media="(max-width: 600px) and (min-width: 351px)"/>
+								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.img}-low.png`} media="(max-width: 350px)"/>
+						  			<img className="portfolio-image" src={process.env.PUBLIC_URL + `/imgs/${item.img}-medium.png`} onDragStart={handleOnDragStart} alt={item.shortDescription} />
+								</picture>
 						  	</Link>
 						  	</div>	
 						  </div>

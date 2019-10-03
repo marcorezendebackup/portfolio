@@ -2,7 +2,7 @@
 			"portfolio": [
 				{
 					"title": "Wiki Game",
-					"img": "wiki-game-cover.png",
+					"img": "wiki-game-cover",
 					"shortDescription": "Jogo de navegador baseado no conteudo da Wikipedia.",
 					"longDescription": [
 						"Wiki Game é um jogo de baralho baseado no conteudo disponibilizado pela Wikipedia, onde cada pagina especifica representa uma carta.",
@@ -19,7 +19,7 @@
 				},			
 				{
 					"title": "My Reads",
-					"img": "my-reads-cover.png",
+					"img": "my-reads-cover",
 					"shortDescription": "Aplicação para reunir e organizar livros em seções/estantes.",
 					"longDescription": [
 						"Wiki Game é um jogo de baralho baseado no conteudo disponibilizado pela Wikipedia, onde cada pagina especifica representa uma carta.",
@@ -33,7 +33,7 @@
 				},			
 				{
 					"title": "Beats",
-					"img": "beats-cover.png",
+					"img": "beats-cover",
 					"shortDescription": "Site para vender beats, drum kits, presets para plugins e muito mais.",
 					"longDescription": [
 						"d",
@@ -44,7 +44,7 @@
 				},			
 				{
 					"title": "Matching Game",
-					"img": "matching-game-cover.png",
+					"img": "matching-game-cover",
 					"shortDescription": "Use sua memória e descubra o todos os pares através deste jogo de navegador.",
 					"longDescription": [
 						"Neste jogo, o jogador precisa usar a memória (ou a sorte) para encontrar uma correspondência à uma figura.",
@@ -63,7 +63,7 @@
 				},			
 				{
 					"title": "Avaliação de Restaurantes",
-					"img": "restaurant-reviews-cover.png",
+					"img": "restaurant-reviews-cover",
 					"shortDescription": "Avaliações de usuários, horário e localização em tempo real.",
 					"longDescription": [
 						"Através desta aplicação, o usuário terá acesso a diversas avaliações de clientes, horário de funcionamento e localização em tempo real. O site é totalmente responsivo e, o mais importante, acessível à todos.",
@@ -79,7 +79,7 @@
 				},			
 				{
 					"title": "Fliperama Clássico",
-					"img": "arcade-game-cover.png",
+					"img": "arcade-game-cover",
 					"shortDescription": "Neste clássico jogo, seu objetivo é chegar até a região com água.",
 					"longDescription": [
 						"Neste clássico jogo de fliperama, o objetivo do jogador é chegar até a região com água. Uma vez, duas vezes, três vezes... muitas vezes. Além de ter em mãos a possibilidade de selecionar seu personagem, o jogador tem acesso a pontuação atual, tempo de jogo, level e vida, tendo acesso a parte dessas informações ao término da partida. A pontuação e a dificuldade estão diretamente relacionadas, isto é, a medida que uma aumenta, a outra também aumenta.",
@@ -114,7 +114,7 @@
 							"time": "10 meses"
 						},
 						"id": "udacity0",
-						"logo": "https://pbs.twimg.com/profile_images/917232737227964416/NudWD1d5_400x400.jpg"
+						"logo": "udacity-logo"
 					},
 					{
 						"institutionName": "GRÁFICA PLURAL",
@@ -127,7 +127,7 @@
 							"time": "6 meses"
 						},
 						"id": "plural0",
-						"logo": "https://pbs.twimg.com/profile_images/1095769536203288576/O3QHzvlY.png"
+						"logo": "plural-logo"
 					},
 					{
 						"institutionName": "SENAI",
@@ -140,7 +140,7 @@
 							"time": "2 anos"
 						},
 						"id": "senai0",
-						"logo": "https://arquivos.sfiec.org.br/sfiec/files/images/LOGO_SENAI.jpg"
+						"logo": "senai-logo"
 					}
 				],
 				"proExperience": [
@@ -155,7 +155,7 @@
 						},
 						"role": "Ajudante Geral",
 						"id": "plural1",
-						"logo": "https://pbs.twimg.com/profile_images/1095769536203288576/O3QHzvlY.png"
+						"logo": "plural-logo"
 					},
 					{
 						"companyName": "VISION BYTE",
@@ -168,7 +168,7 @@
 						},
 						"role": "Mantenedor Eletronico (Estágio)",
 						"id": "visionbite0",
-						"logo": "https://pbs.twimg.com/profile_images/1095769536203288576/O3QHzvlY.png"
+						"logo": "vision-byte-logo"
 					}
 				]
 			}
