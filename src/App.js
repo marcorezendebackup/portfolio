@@ -30,7 +30,7 @@ class App extends Component {
     const paths = []
 
     for (let i = 0; i < portfolioData.portfolio.length; i++) {
-      paths.push(`/portfolio/${portfolioData.portfolio[i].id}`)
+      paths.push(`/${portfolioData.portfolio[i].id}`)
     }
 
     $(window).resize(function() {

@@ -25,6 +25,9 @@ img {
   max-width: inherit !important;
 }
 
+.App {
+  position: relative;
+}
 
 .App-header {
   display: block;

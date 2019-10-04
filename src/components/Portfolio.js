@@ -85,7 +85,7 @@ class Home extends Component {
 						<div className="home-portfolio-item" key={item.id}>	
 						  <div className="home-portfolio-item-img-container">
 						  	<div className="wrapper-image" >
-						  	<Link to={`/portfolio/${item.id}`}>
+						  	<Link to={`/${item.id}`}>
 						  		<picture>
 								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.img}-high.png`} media="(min-width: 1500px)"/>
 								    <source srcset={process.env.PUBLIC_URL + `/imgs/${item.img}-medium.png`} media="(max-width: 600px) and (min-width: 351px)"/>
