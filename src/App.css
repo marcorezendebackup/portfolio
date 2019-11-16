@@ -52,7 +52,7 @@ a:hover {
 
 .main {
   display: block;
-  margin: 50px auto 100px;
+  margin: 50px auto;
   text-align: center;
   width: 85%;
   height: 100%;
@@ -325,14 +325,15 @@ button.confirm:hover {
 
 footer {
   position: absolute;
-  top: 100%; 
-  transform: translate(0,100%);
+  /* top: 100%; */
+  /* bottom: 0; */
+  /* transform: translate(0,100%); */
   width: 100%;
   font-size: 8pt;
   text-align: left;
   color: #fff;
   padding: 1rem;
-  background-color: #303030
+  background-color: #303030;
 }
 
 @media screen and (min-width: 1366px) {

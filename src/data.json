@@ -22,8 +22,7 @@
 					"img": "my-reads-cover",
 					"shortDescription": "Aplicação para reunir e organizar livros em seções/estantes.",
 					"longDescription": [
-						"Wiki Game é um jogo de baralho baseado no conteudo disponibilizado pela Wikipedia, onde cada pagina especifica representa uma carta.",
-						"Esta aplicação de pagina unica foi desenvolvida com o framework React e incrementada com SweetAlert. Outras dependencias não tão implicitas como Serialize e jQuery também estão presentes, auxiliando em partes especificas."
+						"Descrição em desenvolvimento."
 					],
 					"githubLink": "https://github.com/MarcoRezende/reactnd-project-myreads-starter",
 					"screenshots": [
