@@ -106,7 +106,7 @@ li.nav-item:hover:after {
   display:table-cell;
   color: var(--dark-mode-txt);
   font-weight: bolder;
-  margin: 10px 0;
+
 }
 
 .short-nav-item:hover {
@@ -117,7 +117,7 @@ li.nav-item:hover:after {
 .short-nav-item-icon {
   font-size: 18pt !important;
   width: 100%;
-  padding: 15px;
+  padding: 19px 15px 15px;
 }
 
 /* Home/Portfólio */

@@ -27,7 +27,11 @@
 					],
 					"githubLink": "https://github.com/MarcoRezende/reactnd-project-myreads-starter",
 					"screenshots": [
-						"https://i.imgur.com/oKlx38t.png"
+						"https://i.imgur.com/tiGGigx.png",
+						"https://i.imgur.com/Hl3gI3n.png",
+						"https://i.imgur.com/tj9o2EF.png",
+						"https://i.imgur.com/vPrcdsv.png",
+						"https://i.imgur.com/1NaGz76.png"
 					],
 					"id": "my-reads"
 				},			
@@ -72,9 +76,15 @@
 					],
 					"githubLink": "https://github.com/MarcoRezende/mws-restaurant-stage-1",
 					"screenshots": [
-						"https://camo.githubusercontent.com/03a36c89c2f1ae0a74b133247fb55e5ac93b5f02/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f32392f34382f63382f32393438633864393633396235356632393231333037303033353130363730312e706e67",
-						"https://camo.githubusercontent.com/3a45ff468a975de774143f33827fb3048b958777/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f32622f61642f64652f32626164646563313236316531383038396533626230643265656565356235642e706e67"
+						"https://i.imgur.com/wYbgxzW.jpg",
+						"https://i.imgur.com/vFseyg0.jpg",
+						"https://i.imgur.com/98wvBC6.jpg",
+						"https://i.imgur.com/ckHy3uP.png",
+						"https://i.imgur.com/5TIvCKj.jpg",
+						"https://i.imgur.com/OXzzXgH.png",
+						"https://i.imgur.com/sx5i4FI.png"
 					],
+					"liveDemo": "https://marcorezende.github.io/mws-restaurant-stage-1/",
 					"id": "restaurant-reviews"
 				},			
 				{
