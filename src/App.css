@@ -117,7 +117,9 @@ li.nav-item:hover:after {
 .short-nav-item-icon {
   font-size: 18pt !important;
   width: 100%;
-  padding: 19px 15px 15px;
+  padding: 19px 0 15px;
+  margin: 0;
+  width: 27px;
 }
 
 /* Home/Portfólio */
