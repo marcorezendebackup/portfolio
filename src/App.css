@@ -541,6 +541,7 @@ footer {
 }
 
 .mapboxgl-map {
+  background-color: #e6e4e0;
   width: 100% !important;
   height: 30vh !important;
   margin: 0 0 5px 0;
