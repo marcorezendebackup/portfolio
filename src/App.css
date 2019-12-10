@@ -407,10 +407,16 @@ footer {
 }
 
 .perfil-image .me {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 100% !important;
+  object-fit: cover;
+    position: relative;
+    top: -45px;
+    right: 50px;
+    flex-shrink: 0;
+    min-width: 170%;
+    min-height: 170%;
+    max-width: 100% !important;
+    max-height: 100%;
+    transform: scale(.63);
 }
 
 .perfil-data {

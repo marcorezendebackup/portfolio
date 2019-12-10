@@ -10,11 +10,12 @@ import $ from 'jquery';
 
 class App extends Component {
 	state = {
-		navFull: true 
+		navFull: true
 	}
 
-  componentDidMount() {
-  	const width = $(window).width()
+
+    componentDidMount() {
+  		const width = $(window).width();
     	if (width > 500) {
 	    	this.setState({ 
 	    		navFull: true 
@@ -24,13 +25,34 @@ class App extends Component {
 	    		navFull: false 
 	    	})
     	}
-  }	
+    }	
+	
+	authenticateURL(pathname, paths) {
+		let allPaths = paths;
+		let query = `/${pathname.split("/").pop()}`;
+		let pageExist = false;
+
+    	allPaths.push("/", "/sobre-mim", "/contatos");
+
+		for (let i = 0; i < allPaths.length; i++) {
+	    	if (query === allPaths[i]) {
+		    	pageExist = true;
+	    	}
+	    }
+
+	    if (pageExist === false) {	
+	    	window.location = "/";
+	    }
+	}
 
   render() {
     const paths = []
+    let morePaths = [];
+	let pathname = window.location.href
 
     for (let i = 0; i < portfolioData.portfolio.length; i++) {
       paths.push(`/${portfolioData.portfolio[i].id}`)
+      morePaths.push(`/${portfolioData.portfolio[i].id}`)
     }
 
     $(window).resize(function() {
@@ -51,10 +73,12 @@ class App extends Component {
     	
     }.bind(this))
 
+    this.authenticateURL(pathname, paths)
+    
 
     return (
     <HashRouter basename="/">
-        <Route path={['/', '/sobre-mim', '/contatos', paths]} exact render={() => (
+        <Route path='/' render={() => (
 	      <div className="App">
 	          <header className="App-header">
 	            <nav>
@@ -104,11 +128,13 @@ class App extends Component {
 	          <Route path="/" exact render={() => (
 	              <Portfolio/>
 	          )}/>
+	          {morePaths.map((route, i) =>
+		          <Route path={route} exact key={i} render={() => (
+		             <Item/>
+		          )}/>
+	      	  )}
 	          <Route path="/sobre-mim" exact render={() => (
 	              <AboutMe/>
-	          )}/>
-	          <Route path={[paths]} exact render={() => (
-	              <Item/>
 	          )}/>
 	          <Route path="/contatos" exact render={() => (
 	              <Contacts/>
