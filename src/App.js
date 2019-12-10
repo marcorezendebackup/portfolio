@@ -41,7 +41,7 @@ class App extends Component {
 	    }
 
 	    if (pageExist === false) {	
-	    	window.location = "/";
+	    	window.location = "/#/";
 	    }
 	}
 
@@ -84,19 +84,19 @@ class App extends Component {
 	            <nav>
 	              {this.state.navFull === true &&
 	              <ul className="nav">
-	                <li className="nav-item">
-	                	<Link to="/sobre-mim">
-	                		<i className="fas fa-address-card"></i>sobre mim
-	                    </Link>
+	                <li className="nav-item">	                	
+		                <Link className="nav-link" to="/sobre-mim">
+		                	<div className="nav-icon-wrapper"><p><i className="fas fa-address-card"></i>sobre mim</p></div>
+		                </Link>
 	                </li>
 	                <li className="nav-item">
 	                	<Link to="/">
-	                		<i className="fas fa-book"></i>portfólio
+	                		<div className="nav-icon-wrapper"><p><i className="fas fa-book"></i>portfólio</p></div>
 	                	</Link>
 	                </li>
 	                <li className="nav-item">
 	                	<Link to="/contatos">
-	                		<i className="fas fa-mail-bulk"></i>contatos
+	                		<div className="nav-icon-wrapper"><p><i className="fas fa-mail-bulk"></i>contatos</p></div>
 	                	</Link>
 	                </li>
 	              </ul>

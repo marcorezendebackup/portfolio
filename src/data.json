@@ -37,12 +37,15 @@
 				{
 					"title": "Beats",
 					"img": "beats-cover",
-					"shortDescription": "Site para vender beats, drum kits, presets para plugins e muito mais.",
+					"shortDescription": "Site para vender conteudo musical, como drum kits, presets para plugins e muito mais.",
 					"longDescription": [
-						"d",
-						"e"
+						"Em desenvolvimento."
 					],
-					"githubLink": "https://github.com/MarcoRezende/site-selling-beats",
+					"githubLink": "https://github.com/MarcoRezende/beats",
+					"screenshots": [
+						""
+					],
+					"liveDemo": "https://marcorezende.github.io/beats",
 					"id": "beats"
 				},			
 				{
@@ -91,7 +94,7 @@
 					"img": "arcade-game-cover",
 					"shortDescription": "Neste clássico jogo, seu objetivo é chegar até a região com água.",
 					"longDescription": [
-						"Neste clássico jogo de fliperama, o objetivo do jogador é chegar até a região com água. Uma vez, duas vezes, três vezes... muitas vezes. Além de ter em mãos a possibilidade de selecionar seu personagem, o jogador tem acesso a pontuação atual, tempo de jogo, level e vida, tendo acesso a parte dessas informações ao término da partida. A pontuação e a dificuldade estão diretamente relacionadas, isto é, a medida que uma aumenta, a outra também aumenta.",
+						"Neste clássico jogo de fliperama, o objetivo do jogador é chegar até a região com água. Uma vez, duas vezes, três vezes... muitas vezes. Além de ter em mãos a possibilidade de selecionar seu personagem, o jogador tem acesso a pontuação atual, tempo de jogo, level e vida, tendo acesso a parte dessas informações ao término da partida. A medida que os pontos se acumulam, o jogador passa para levels mais difíceis.",
 						"No desenvolvimento desta aplicação, foram utilizados recursos tais quais jQuery, SweetAlert (Modal) e Font Awesome.",
 						"Esta jogo se faz possível graças a hierarquia prototípica. O cenário e os personagens, assim como cada movimento, são gerados com base no canvas."
 					],
