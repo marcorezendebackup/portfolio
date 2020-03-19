@@ -39,11 +39,22 @@
 					"img": "beats-cover",
 					"shortDescription": "Site para vender conteudo musical, como drum kits, presets para plugins e muito mais.",
 					"longDescription": [
-						"Em desenvolvimento."
+						"Nos últimos anos a produção musical digital cresceu e se popularizou, assim como o compartilhamento do conteudo necessário para criar essa forma de arte. Por meio desta loja, o usuário pode comprar estes produtos e aumentar ainda mais sua biblioteca digital. Dentre os itens diponíveis, temos: Preset/bank para diversos plugins, elementos de bateria (drum kit), MIDI, loops e samples dos mais variados generos.",
+						"Este app foi desenvolvido com Angular 8."
 					],
 					"githubLink": "https://github.com/MarcoRezende/beats",
 					"screenshots": [
-						""
+						"https://i.imgur.com/O14CiYr.png",
+						"https://i.imgur.com/R1ciWug.png",
+						"https://i.imgur.com/OebaSG0.png",
+						"https://i.imgur.com/fQqwLHE.png",
+						"https://i.imgur.com/49Ny3bj.png",
+						"https://i.imgur.com/mjxE0L6.png",
+						"https://i.imgur.com/SKy0bkL.png",
+						"https://i.imgur.com/ty9NxCe.png",
+						"https://i.imgur.com/S5ZAjnc.png",
+						"https://i.imgur.com/vsqQHNb.png",
+						"https://i.imgur.com/u8XsMVJ.png"
 					],
 					"liveDemo": "https://marcorezende.github.io/beats",
 					"id": "beats"
