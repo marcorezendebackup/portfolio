@@ -1,2 +1,2 @@
 # Live Demo
-https://marcorezende.github.io/portfolio/#/beats
+https://marcorezende.github.io/portfolio
